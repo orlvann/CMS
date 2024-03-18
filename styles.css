@@ -10,17 +10,20 @@
   }
   
   .container {
-    max-width: calc(100% - 250px); /* subtract the width of the sidebar */
-    margin: 0 auto;
-    margin-left: 250px; /* space for the sidebar */
-    padding: 20px; /* optional: added some padding */
-    box-sizing: border-box; /* ensures padding is included in width */
+    margin-left: 250px; /* Push container to the right to make space for the sidebar */
+  }
+  
+  .sidebar {
+    background-color: #bceaf1;
+    width: 250px; /* Width of the sidebar */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
   }
   
   .main-header {
     background-color: #f7f7f7;
     padding: 20px 40px;
-    margin-bottom: 60px;
   }
   
   nav {
@@ -123,16 +126,15 @@
     font-style: italic;
   }
   
-  .post-img {
-    width: 100%;
-    height: auto;
-  }
-  
   nav a:link {
     margin-right: 30px;
-    margin-top: 10px;
     display: inline-block;
   }
+  
+  .post-img {
+    width: 100%; 
+    height: auto
+}
   
   nav a:link:last-child {
     margin-right: 0;
