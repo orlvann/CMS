@@ -1,29 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
   }
   
-  body {
-    color: #444;
+  body, html {
     font-family: sans-serif;
-    border-top: 10px solid #1098ad;
+    color: #444;
   }
   
   .container {
-    margin-left: 250px; /* Push container to the right to make space for the sidebar */
+    margin-left: 470px; 
+    margin-right: 370px; 
   }
   
   .sidebar {
     background-color: #bceaf1;
-    width: 250px; /* Width of the sidebar */
+    width: 250px;
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 190px; 
+    bottom: 0;
     overflow: auto;
+    padding: 20px; 
   }
   
   .main-header {
     background-color: #f7f7f7;
     padding: 20px 40px;
+    width: calc(100% - 290px); /* Adjust the width to account for the sidebar and margins */
+    margin-left: 270px; /* Align with the start of the container */
   }
   
   nav {
@@ -34,10 +40,8 @@
     margin-bottom: 60px;
   }
   
-
-  h1,
-  h2,
-  h3 {
+  /* Heading styles */
+  h1, h2, h3 {
     color: #1098ad;
   }
   
@@ -58,67 +62,23 @@
     margin-top: 40px;
   }
   
+  /* Paragraph styles */
   p {
     font-size: 22px;
     line-height: 1.5;
     margin-bottom: 15px;
   }
-
-  .left {
-    background-color: #bceaf1;
-    color: #444;
-    width: 250px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow: auto;
-    border-right: 2px solid #1098ad; 
-    padding: 20px; 
-    box-sizing: border-box;
-}
   
-.left h2 {
-    color: #1098ad; 
-    font-size: 26px; 
-    text-transform: uppercase;
-    font-style: italic;
-    margin-bottom: 20px; 
-  }
-  
-  .left a {
-    color: #1098ad;
-    text-decoration: none;
-    font-size: 18px; 
-    margin-bottom: 10px; 
-    display: block; 
-}
-  
-  #mySearch {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px; 
-    border: 1px solid #ccc; 
-    box-sizing: border-box; 
-  }
-
-  #author {
+  /* Author and copyright styles */
+  #author, #copyright {
     font-style: italic;
     font-size: 18px;
   }
   
-  #copyright {
-    font-size: 16px;
-  }
-
-  
-  a:link {
+  /* Link styles */
+  a:link, a:visited {
     color: #1098ad;
     text-decoration: none;
-  }
-  
-  a:visited {
-    color: #1098ad;
   }
   
   a:active {
@@ -126,24 +86,26 @@
     font-style: italic;
   }
   
+  /* Navigation link styles */
   nav a:link {
     margin-right: 30px;
     display: inline-block;
   }
   
-  .post-img {
-    width: 100%; 
-    height: auto
-}
-  
   nav a:link:last-child {
     margin-right: 0;
   }
   
+  /* Image styles */
+  .post-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* First letter of h1 style */
   h1::first-letter {
     font-style: normal;
     margin-right: 5px;
   }
-  
   
   
