@@ -6,14 +6,15 @@
   body {
     color: #444;
     font-family: sans-serif;
-  
     border-top: 10px solid #1098ad;
-    position: relative;
   }
   
   .container {
-    width: 800px;
+    max-width: calc(100% - 250px); /* subtract the width of the sidebar */
     margin: 0 auto;
+    margin-left: 250px; /* space for the sidebar */
+    padding: 20px; /* optional: added some padding */
+    box-sizing: border-box; /* ensures padding is included in width */
   }
   
   .main-header {
@@ -58,6 +59,44 @@
     font-size: 22px;
     line-height: 1.5;
     margin-bottom: 15px;
+  }
+
+  .left {
+    background-color: #bceaf1;
+    color: #444;
+    width: 250px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    border-right: 2px solid #1098ad; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+  
+.left h2 {
+    color: #1098ad; 
+    font-size: 26px; 
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 20px; 
+  }
+  
+  .left a {
+    color: #1098ad;
+    text-decoration: none;
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    display: block; 
+}
+  
+  #mySearch {
+    width: 100%; /* make the search bar fit the width of the sidebar */
+    padding: 10px;
+    margin-bottom: 20px; /* space below the search bar */
+    border: 1px solid #ccc; /* subtle border for the input */
+    box-sizing: border-box; /* includes padding and border in the width */
   }
 
   #author {
