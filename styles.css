@@ -92,11 +92,11 @@
 }
   
   #mySearch {
-    width: 100%; /* make the search bar fit the width of the sidebar */
+    width: 100%;
     padding: 10px;
-    margin-bottom: 20px; /* space below the search bar */
-    border: 1px solid #ccc; /* subtle border for the input */
-    box-sizing: border-box; /* includes padding and border in the width */
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
   }
 
   #author {
